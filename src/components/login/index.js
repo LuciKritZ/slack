@@ -3,6 +3,7 @@ import React from "react";
 import {Button} from "@material-ui/core";
 
 import {auth, provider} from "../../services/firebase";
+
 import {actionTypes} from "../../state/reducer";
 import {useStateValue} from "../../state/StateProvider";
 import "./style.css";
@@ -32,7 +33,7 @@ function Login() {
 					alt=""
 				/>
 				<h1>
-                    Slack by LuciKritZ
+          Slack by LuciKritZ
 				</h1>
 				<p>
 					<a
@@ -47,7 +48,7 @@ function Login() {
                     Sign in with Google
 				</Button>
 				<h6>
-                    Inspired by&nbsp;
+          Inspired by&nbsp;
 					<a
 						target="_blank"
 						rel="noreferrer"
