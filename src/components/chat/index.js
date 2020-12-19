@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from "react";
 
-import {useParams} from "react-router-dom";
 import {StarBorderOutlined, InfoOutlined} from "@material-ui/icons";
+import {useParams} from "react-router-dom";
 
 import db from "../../services/firebase";
-import Message from "../message";
 import ChatInput from "../chatInput";
+import Message from "../message";
 import "./style.css";
 
 function Chat() {
@@ -33,12 +33,20 @@ function Chat() {
 			<div className="chat__header">
 				<div className="chat__header-left">
 					<h4 className="chat__channel-name">
-						<strong># {roomDetails?.name}</strong>
+						<strong>
+							# 
+							{" "}
+							{roomDetails?.name}
+						</strong>
 						<StarBorderOutlined />
 					</h4>
 				</div>
 				<div className="chat__header-right">
-					<p><InfoOutlined /> Details</p>
+					<p>
+						<InfoOutlined />
+						{" "}
+Details
+					</p>
 				</div>
 			</div>
 			<div className="chat__messages">
