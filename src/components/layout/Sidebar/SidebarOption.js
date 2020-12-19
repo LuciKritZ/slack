@@ -19,6 +19,7 @@ function SidebarOption({Icon, title, id, addChannelOption}) {
 	};
 
 	const addChannel = () => {
+		// eslint-disable-next-line no-alert
 		const channelName = prompt("Please enter the channel name");
 		if (channelName) {
 			db.collection("rooms").add({
@@ -28,7 +29,11 @@ function SidebarOption({Icon, title, id, addChannelOption}) {
 	};
 
 	return (
-		<div className="sidebar-option" onClick={addChannelOption ? addChannel : selectChannel}>
+		<div
+			className="sidebar-option"
+			onClick={addChannelOption ? addChannel : selectChannel}
+			role="presentation"
+		>
 			{Icon && <Icon className="sidebar-option__icon" /> }
 			{
 				Icon ? (

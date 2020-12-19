@@ -15,9 +15,9 @@ import {
 	AddRounded,
 } from "@material-ui/icons";
 
-import SidebarOption from "./SidebarOption";
 import db from "../../../services/firebase";
 import {useStateValue} from "../../../state/StateProvider";
+import SidebarOption from "./SidebarOption";
 import "./style.css";
 
 function Sidebar() {
