@@ -1,0 +1,59 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "codeFrame": false
+    },
+    "extends": ["airbnb", "prettier"],
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "rules": {
+        "max-len": [
+            "error",
+            {
+                "code": 200,
+                "ignoreComments": true
+            }
+        ],
+        "indent": [1, "tab"],
+        "semi": [2, "always"],
+        "no-param-reassign": "off",
+        "quotes": ["error", "double"],
+        "import/first": "error",
+        "import/order": [
+            "error",
+            {
+                "groups": ["builtin", "external", "internal"],
+                "pathGroups": [
+                    {
+                        "pattern": "react",
+                        "group": "external",
+                        "position": "before"
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": ["react"],
+                "newlines-between": "always",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ],
+        "react/destructuring-assignment": ["off"],
+        "react/jsx-filename-extension": ["off"],
+        "react/jsx-props-no-spreading": ["off"],
+        "react/no-unescaped-entities": ["off"],
+        "react/forbid-prop-types": ["off"],
+        "react/require-default-props": ["off"],
+        "react/jsx-indent": ["off"],
+        "react/jsx-indent-props": ["off"],
+        "react/prop-types": ["off"],
+        "react/no-array-index-key": ["off"],
+        "jsx-quotes": ["off"],
+        "no-return-assign": ["off"],
+        "no-nested-ternary": ["off"]
+    }
+}
