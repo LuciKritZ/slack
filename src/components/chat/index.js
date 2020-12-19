@@ -45,7 +45,7 @@ function Chat() {
 					<p>
 						<InfoOutlined />
 						{" "}
-Details
+						Details
 					</p>
 				</div>
 			</div>

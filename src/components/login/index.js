@@ -32,7 +32,7 @@ function Login() {
 					alt=""
 				/>
 				<h1>
-                    Slack by LuciKritZ
+          			Slack by LuciKritZ
 				</h1>
 				<p>
 					<a
